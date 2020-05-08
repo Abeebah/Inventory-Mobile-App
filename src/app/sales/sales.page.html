@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Sales</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <ion-card-content>
+            <ion-list inset>
+                <ion-item *ngFor="let users of sData">
+                    <ion-label text-wrap color="#000">
+                        <p>Product Name : {{users.name}}</p>
+                        <p>Customer Name : {{users.customerName}}</p>
+                        <p>Quantity Bought : {{users.saleQuantity}} </p>
+                        <p>Sold By : {{users.createdByUser}} </p>
+                        <p>Date Sold : {{users.dateCreated}}</p>
+
+                    </ion-label>
+                </ion-item>
+            </ion-list>
+            <!--   <ion-row>
+                <ion-item>
+                    <ion-button color="primary">Edit Product</ion-button>
+                    <ion-button color="primary"> Delete Product</ion-button>
+                </ion-item>
+            </ion-row>-->
+        </ion-card-content>
+    </ion-card>
+</ion-content>

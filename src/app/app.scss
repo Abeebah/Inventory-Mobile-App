@@ -1,0 +1,26 @@
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+// @import url(http://fonts.googleapis.com/css?family=Oxygen);
+// $font-family-base: "Oxygen",
+// sans-serif !default;
+// @import url('https://fonts.googleapis.com/css?family=Raleway');
+// $font-family-base: "Raleway",
+// sans-serif !default;
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+*:not(ion-icon) {
+    font-family: 'Varela Round', sans-serif!important;
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

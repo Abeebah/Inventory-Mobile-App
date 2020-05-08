@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Dashboard</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row>
+        <ion-col>
+            <ion-item color=" #003333">
+                <h2>Welcome<span style=" text-transform: uppercase"> {{userName}}</span></h2>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <p style=" font-size: 18px">User Profile</p>
+            </ion-item>
+            <ion-item>
+                <ion-label style=" font-size: 25px">
+                    <p style=" font-size: 15px">First Name : {{firstName}}</p><br>
+                    <p style=" font-size: 15px">Last Name : {{lastName}}</p><br>
+                    <p style=" font-size: 15px">Username : {{userName}}</p><br>
+                    <p style=" font-size: 15px">Email : {{email}}</p><br>
+                    <p style=" font-size: 15px">Company : {{company}}</p><br>
+
+                </ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

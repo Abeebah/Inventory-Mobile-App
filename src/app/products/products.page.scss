@@ -1,0 +1,88 @@
+        ion-row.active {
+            background-color: #f5f5f5;
+        }
+        
+        ion-row.success {
+            background-color: #dff0d8;
+        }
+        
+        ion-row.warning {
+            background-color: #fcf8e3;
+        }
+        
+        ion-row.error {
+            background-color: #f2dede;
+        }
+        
+        .summary_row {
+            display: flex;
+            flex-wrap: wrap;
+            width: max-content;
+        }
+        
+        .summary_row:first-child .summarycell {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .row:first-child .summarycell {
+            font-weight: bold;
+            text-align: center;
+            overflow: auto;
+            word-wrap: break-word;
+            width: 27vw;
+            border: 1px solid #b3b3b3;
+            padding: 5px;
+            text-align: right;
+        }
+        
+        .summarycell {
+            overflow: auto;
+            word-wrap: break-word;
+            width: 27vw;
+            border: 1px solid #b3b3b3;
+            padding: 5px;
+            text-align: right;
+        }
+        
+        .summarycell:nth-child(2) {
+            //  width: 20vw;
+            text-align: center;
+        }
+        
+        .summarycell:nth-child(3) {
+            //  width: 20vw;
+            text-align: center;
+        }
+        
+        .summarycell:first-child {
+            //  width: 20vw;
+            text-align: center;
+        }
+        
+        .header .col {
+            --background-color: lightgrey;
+        }
+        
+        .col {
+            border: solid 1px grey;
+            border-bottom-style: none;
+            border-right-style: none;
+        }
+        
+        .col:last-child {
+            border-right: solid 1px grey;
+        }
+        
+        .row:last-child .col {
+            border-bottom: solid 1px grey;
+        }
+        
+        .ion-grid {
+            overflow-x: scroll;
+        }
+        
+        .ion-row {
+            display: table;
+            white-space: nowrap;
+        }

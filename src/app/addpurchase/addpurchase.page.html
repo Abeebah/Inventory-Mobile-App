@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Add Purchase</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <ion-card-content>
+            <form (ngSubmit)="addPurchase()">
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                            <ion-item style="padding-top: 20px; padding-bottom: 30px">
+                                <ion-label>Select Product</ion-label>
+                                <ion-select #cre [(ngModel)]="add.product" name="product" (ionChange)="getProductId(cre.value)">
+                                    <ion-select-option *ngFor="let add of purchasePrData" [value]="add.id">{{add.name}}</ion-select-option>
+                                </ion-select>
+                            </ion-item>
+                            <ion-item style="padding-top: 20px; padding-bottom: 30px">
+                                <ion-input type="number" [(ngModel)]="add.quantity" name="quantity" placeholder="Quantity"></ion-input>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <div class="ion-text-center">
+                    <ion-button color="secondary" expand="full" shape="round" type="submit"> Add Purchase</ion-button>
+                </div>
+            </form>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
